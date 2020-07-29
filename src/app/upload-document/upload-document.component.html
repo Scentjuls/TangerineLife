@@ -1,0 +1,51 @@
+<div *ngIf="!showTable" class="upload-background" appUploadDocument (onFileDropped)="uploadFileDrag($event)">
+  <div class="upload-icon">
+    <i class="fas fa-cloud-upload-alt"></i>
+  </div>
+  <p>Drag and drop a file here</p>
+  <p class="or">or</p>
+  <div class="choose-file" (click)="getFile()">Choose File</div>
+  <div style='height: 0px;width: 0px; overflow:hidden;'>
+    <input id="upfile" type="file" value="upload" (change)="uploadFileClick($event.target.files)" />
+  </div>
+  <div style='height: 0px;width: 0px; overflow:hidden;'>
+    <input type="file" id="fileElem">
+  </div>
+</div>
+
+
+<div *ngIf="showTable" class="card">
+  <div class="parent">
+    <p class="column-mapping">Coloumn Mapping</p>
+    <button class="save" (click)="uploadCSV()">Save</button>
+  </div>
+  <div class="table-container">
+    <table>
+      <tr class="heading">
+        <th scope="col">Fullname</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">Address</th>
+        <th scope="col">State</th>
+        <th scope="col">LGA</th>
+        <th scope="col">Date of Birth</th>
+        <th scope="col">Salary</th>
+        <th scope="col">Gender</th>
+        <th scope="col">Call Allowance</th>
+        <th scope="col">Transport Allowance</th>
+      </tr>
+      <tr *ngFor="let hero of tableDatas" class="data">
+        <th scope="col"> {{ hero.Fullname }}</th>
+        <th scope="col"> {{ hero.PhoneNumber }}</th>
+        <th scope="col"> {{ hero.Address }}</th>
+        <th scope="col"> {{ hero.State }}</th>
+        <th scope="col"> {{ hero.LGA }}</th>
+        <th scope="col"> {{ hero.DateofBirth }}</th>
+        <th scope="col"> {{ hero.Salary }}</th>
+        <th scope="col"> {{ hero.Gender }}</th>
+        <th scope="col"> {{ hero.CallAllowance }}</th>
+        <th scope="col"> {{ hero.TransportAllowance  }}</th>
+
+      </tr>
+    </table>
+  </div>
+</div>

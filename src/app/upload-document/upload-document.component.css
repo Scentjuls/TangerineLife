@@ -1,0 +1,102 @@
+.upload-background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #ffffff !important;
+}
+
+.upload-icon {
+  text-align: center;
+  background-color: transparent;
+  color: #E8E8EB;
+  font-size: 130px;
+}
+
+.or {
+  text-align: center;
+}
+
+.choose-file {
+  position: relative;
+  font-family: 'Oswald', sans-serif;
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #EC7E1F;
+  text-align: center;
+  background-color: #EC7E1F;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.heading {
+  font-family: 'Oswald', sans-serif;
+  color: #7a7a7a;
+  font-size: 15px;
+}
+
+.upload-background p {
+  font-family: 'Oswald', sans-serif;
+  color: #a1a1a7;
+  font-size: 16px;
+}
+
+.card {
+  background-color: #ffffff;
+}
+
+.column-mapping {
+  font-family: 'Oswald', sans-serif;
+  color: #494949;
+  font-size: 18px;
+}
+
+.data th {
+  font-family: 'Oswald', sans-serif;
+  color: #494949;
+  font-size: 13px;
+}
+
+.parent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.save {
+  height: 38px;
+  width: 85px;
+  float: right;
+  background-color: #EC7E1F;
+  padding: 10px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #EC7E1F;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.save:focus {
+  border: 1px solid #EC7E1F;
+}
+
+.table-container {
+  overflow-x: auto;
+}
