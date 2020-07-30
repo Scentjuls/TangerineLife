@@ -45,7 +45,6 @@ export class UploadDocumentComponent implements OnInit {
             this.toastr.success('You have Uploaded the CSV file Sucessfully', 'Successful Upload');
             this.showTable = true;
             this.tableDatas = result.data
-            localStorage.setItem('data', JSON.stringify(result.data))
           } else {
             this.toastr.error('Upload a valid excel file with matching headers', 'Wrong Headers');
           }
@@ -76,7 +75,6 @@ export class UploadDocumentComponent implements OnInit {
             this.toastr.success('You have Uploaded the CSV file Sucessfully', 'Successful Upload');
             this.showTable = true;
             this.tableDatas = result.data
-            localStorage.setItem('data', JSON.stringify(result.data))
           } else {
             this.toastr.error('Upload a valid excel file with matching headers', 'Wrong Headers');
           }
